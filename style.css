@@ -1,0 +1,109 @@
+body {
+  background-color: #c3c5c4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c3c5c4;
+    padding: 20px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .satellite {
+      top: 10px !important;
+    }
+    
+  }
+  		/* Стили для модального окна */
+          .modal {
+			display: none; /* Скрываем модальное окно по умолчанию */
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.modal-content {
+			background-color: #c3c5c4;
+			margin: 10% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+    .header_button {
+      background-color: #E63521;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      width: 100px;
+      height: 30px;
+      margin: 10px 25px 0 30px;
+      font-weight: bold;
+    }
+    .header_button:hover, .header_button:focus {
+      cursor: pointer;
+    }
+    .logo {
+      margin: 190px 0 0 55px;
+    }
+    .satellite {
+      position: absolute;
+      left: 1100px;
+      bottom: 380px;
+    }
+    .crow {
+      margin-top: 125px ;
+    }
+    .city {
+      position: absolute;
+      left: 500px;
+      top: 340px;
+    }

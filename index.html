@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starlink</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <nav>
+            <!-- Создаем кнопки, при нажатии на которые будет открываться модальное окно -->
+            <button onclick="openModal()" class="header_button">Ссылка 1</button>
+            <button onclick="openModal()" class="header_button">Ссылка 2</button>
+            <button onclick="openModal()" class="header_button">Ссылка 3</button>
+            <button onclick="openModal()" class="header_button">Ссылка 4</button>
+            <button onclick="openModal()" class="header_button">Ссылка 5</button>
+
+            <!-- Создаем модальное окно -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <p>Содержимое модального окна</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="logo">
+        <img src="images/надпись.svg" alt="logo">
+</div>
+    <div class="satellite">
+        <img src="images/спутник.svg" alt="satellite">
+    </div>
+    <div class="crow">
+        <img src="images/ворон.svg" alt="crow">
+    </div>
+    <div class="city">
+        <img src="images/город.svg" alt="city">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
