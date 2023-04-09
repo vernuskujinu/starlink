@@ -1,18 +1,25 @@
-		// Получаем ссылки на элементы модального окна и кнопки закрытия
-		var modal = document.getElementById("myModal");
-		var closeBtn = document.getElementsByClassName("close")[0];
+const buttons = document.querySelectorAll('.btn');
+const modals = document.querySelectorAll('.modal');
 
-		// Функция открытия модального окна
-		function openModal() {
-			modal.style.display = "block";
-		}
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modalTarget = button.getAttribute('data-modal-target');
+    const modal = document.querySelector(modalTarget);
 
-		// Функция закрытия модального окна
-		function closeModal() {
-			modal.style.display = "none";
-		}
+    modals.forEach(m => {
+      m.style.display = 'none';
+    });
 
-		// Закрытие модального окна при нажатии на кнопку закрытия
-		closeBtn.onclick = function() {
-			modal.style.display = "none";
-		}
+    modal.style.display = 'block';
+  });
+});
+
+const closeButtons = document.querySelectorAll('.btn-close');
+
+closeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    modal.style.display = 'none';
+  });
+});
+
