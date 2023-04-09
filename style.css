@@ -1,9 +1,26 @@
 html {
-overflow: scroll;
-overflow-x: hidden;
- }
+  overflow: scroll;
+  overflow-x: hidden;
+}
 body {
   background-color: #c3c5c4;
+  
+}
+.logo_text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  text-transform: uppercase;
+  color: #1f1b20;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+}
+.logo_title {
+  font-family: 'Raleway', sans-serif;
+  color: #587b81;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 .navbar {
     display: flex;
@@ -53,15 +70,19 @@ body {
     }
   }
     @media screen and (max-width: 390px) {
-	    body {
-		    max-width: 368px;
-	    }
+      body {
+        width: 360px;
+        
+      }
       .logo {
         width: 360px;
         margin: 50px 30px 0 10px !important;
       }
-      .logo-image {
-        width: 300px;
+      .logo_text {
+        font-size: 30px;
+      }
+      .logo_title {
+        font-size: 19px;
       }
       .satellite-image {
         width: 100px;
@@ -73,10 +94,7 @@ body {
         width: 120px;
       }
       .city-image {
-        position: relative;
-        width: 200px;
-        right: 360px;
-        top: 50px;
+        display: none;
       }
   }
   		/* Стили для модального окна */
@@ -125,18 +143,28 @@ body {
       cursor: pointer;
     }
     .logo {
-      margin: 190px 0 0 55px;
+      margin: 100px 0 0 55px;
     }
     .satellite {
       position: absolute;
       left: 1100px;
-      bottom: 400px;
+      bottom: 460px;
+    }
+    .satellite-image {
+      height: 190px;
     }
     .crow {
-      margin-top: 125px ;
+      margin-top: 50px ;
+    }
+    .crow-image {
+      height: 250px;
     }
     .city {
       position: absolute;
-      left: 500px;
-      top: 340px;
+      left: 520px;
+      top: 200px;
     }
+    .city-image {
+      height: 455px;
+        }
+
