@@ -1,6 +1,8 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
+  margin: 0;
+  height: 100%;
 }
 body {
   background-color: #c3c5c4;
@@ -76,7 +78,7 @@ body {
       }
       .logo {
         width: 360px;
-        margin: 50px 30px 0 10px !important;
+        margin: 100px 30px 0 10px !important;
       }
       .logo_text {
         font-size: 30px;
@@ -85,12 +87,10 @@ body {
         font-size: 19px;
       }
       .satellite-image {
-        width: 100px;
-        position: absolute;
-        right: 800px;
-        top: 110px;
+        display: none;
       }
       .crow-image {
+        margin-top: 25px;
         width: 120px;
       }
       .city-image {
@@ -180,10 +180,6 @@ body {
 .btn:hover, .btn:active {
   cursor: pointer;
 }
-html, body {
-  margin: 0;
-  height: 100%;
-}
 
 * {
   font-family: "Raleway";
@@ -234,7 +230,7 @@ html, body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: black;
   position: absolute;
   height: 4px;
   width: 30px;
