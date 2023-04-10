@@ -58,12 +58,15 @@ body {
     }
   
     .navbar ul {
-      flex-direction: column;
+      flex-direction: row;
       justify-content: flex-start;
     }
   
     .navbar ul li {
       margin: 10px 0;
+    }
+    .city-image {
+      display: none;
     }
   }
   @media screen and (max-width: 1024px) {
@@ -71,7 +74,7 @@ body {
       top: 10px !important;
     }
   }
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 414px) {
       body {
         width: 360px;
         
@@ -90,7 +93,7 @@ body {
         display: none;
       }
       .crow-image {
-        margin-top: 40px;
+        margin-top: 50px;
         width: 120px;
       }
       .city-image {
@@ -267,11 +270,12 @@ body {
     display: flex;
   }
   .menu {
+    display: flex;
     position: absolute;
     top: 0;
     margin-top: 50px;
     left: 0;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
