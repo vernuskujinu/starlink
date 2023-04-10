@@ -15,12 +15,23 @@
 <body>
     <header class="navbar">
         <nav>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+          <ul class="menu">
+            <li><button class="btn" data-modal-target="#modal1">Ссылка 1</button></li>
+            <li><button class="btn" data-modal-target="#modal2">Ссылка 2</button></li>
+            <li><button class="btn" data-modal-target="#modal3">Ссылка 3</button></li>
+            <li><button class="btn" data-modal-target="#modal4">Ссылка 4</button></li>
+            <li><button class="btn" data-modal-target="#modal5">Ссылка 5</button></li>
+          </ul>
             <!-- Создаем кнопки, при нажатии на которые будет открываться модальное окно -->
-            <button class="btn" data-modal-target="#modal1">Ссылка 1</button>
+            <!-- <button class="btn" data-modal-target="#modal1">Ссылка 1</button>
 <button class="btn" data-modal-target="#modal2">Ссылка 2</button>
 <button class="btn" data-modal-target="#modal3">Ссылка 3</button>
 <button class="btn" data-modal-target="#modal4">Ссылка 4</button>
-<button class="btn" data-modal-target="#modal5">Ссылка 5</button>
+<button class="btn" data-modal-target="#modal5">Ссылка 5</button> -->
 
 <div class="modal" id="modal1">
   <div class="modal-content">
