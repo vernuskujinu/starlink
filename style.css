@@ -2,7 +2,6 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   margin: 0;
-  height: 100%;
 }
 body {
   background-color: #c3c5c4;
@@ -103,12 +102,12 @@ body {
         flex-direction: column;
       }
   }
-  		/* Стили для модального окна */
-		.close:hover,
-		.close:focus {
-			color: #000;
-			text-decoration: none;
-			cursor: pointer;
+  /* Стили для модального окна */
+	.close:hover,
+	.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 		}
     .header_button:hover, .header_button:focus {
       cursor: pointer;
